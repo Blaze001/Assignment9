@@ -1,0 +1,183 @@
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+import java.awt.Event;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+
+public class Flags1
+extends JFrame
+implements ActionListener
+{
+	 public Flags1 (String title){
+		 BufferedImage image;
+	     
+		 JButton button = new JButton("Canada");
+	        button.addActionListener(this);
+	        JLabel imageCa = null;
+	        imageCa = new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\ca.gif"));
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layout = new GridLayout(3, 3, 3, 3);
+	        // a JPanel for canada
+	        JPanel canadaPanel = new JPanel();
+	        canadaPanel.setLayout(layout);
+	        canadaPanel.add(imageCa);
+	        canadaPanel.add(button);
+	        
+	        JButton button2 = new JButton("China");
+	        // this points to the actionPerformed
+	        // actionListener
+	        button2.addActionListener(this);
+	        JLabel imageChina = null;
+	        imageChina = new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\china.gif"));
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layout2 = new GridLayout(3, 3, 3, 3);
+	        // a JPanel for china
+	        JPanel chinaPanel = new JPanel();
+	        chinaPanel.setLayout(layout2);
+	        chinaPanel.add(imageChina);
+	        chinaPanel.add(button2);
+	        
+	        JButton button3 = new JButton("Denmark");
+	        
+	        button3.addActionListener(this);
+	        JLabel imageDenmark = null;
+	        imageDenmark= new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\denmark.gif"));
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layout3 = new GridLayout(3, 3, 3, 3);
+	        // a JPanel for denmark
+	        JPanel denmarkPanel = new JPanel();
+	        denmarkPanel.setLayout(layout3);
+	        denmarkPanel.add(imageDenmark);
+	        denmarkPanel.add(button3);
+	        
+	        JButton button4 = new JButton("France");
+	        // this points to the actionPerformed
+	        // actionListener
+	        button4.addActionListener(this);
+	        JLabel imageFrance = null;
+	        imageFrance= new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\fr.gif"));
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layout4 = new GridLayout(3, 3, 3, 3);
+	        // a JPanel for france
+	        JPanel francePanel = new JPanel();
+	        francePanel.setLayout(layout4);
+	        francePanel.add(imageFrance);
+	        francePanel.add(button4);
+	       
+	        JButton button5 = new JButton("Germany");
+	        // this points to the actionPerformed
+	        // actionListener
+	        button5.addActionListener(this);
+	        JLabel imageGermany = null;
+	        imageGermany= new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\germany.gif"));
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layout5 = new GridLayout(3, 3, 3, 3);
+	        // a JPanel for germany
+	        JPanel germanyPanel = new JPanel();
+	        germanyPanel.setLayout(layout5);
+	        germanyPanel.add(imageGermany);
+	        germanyPanel.add(button5);
+	        
+	        JButton button6 = new JButton("India");
+	        // this points to the actionPerformed
+	        // actionListener
+	        button6.addActionListener(this);
+	        JLabel imageIndia = null;
+	        imageIndia= new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\india.gif"));
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layout6 = new GridLayout(3, 3, 3, 3);
+	        // a JPanel for india
+	        JPanel indiaPanel = new JPanel();
+	        indiaPanel.setLayout(layout6);
+	        indiaPanel.add(imageIndia);
+	        indiaPanel.add(button6);
+	        
+	        JButton button7 = new JButton("Norway");
+	        // this points to the actionPerformed
+	        // actionListener
+	        button7.addActionListener(this);
+	        JLabel imageNorway = null;
+	        imageNorway= new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\norway.gif"));
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layout7 = new GridLayout(3, 3, 3, 3);
+	        // a JPanel for norway
+	        JPanel norwayPanel = new JPanel();
+	        norwayPanel.setLayout(layout7);
+	        norwayPanel.add(imageNorway);
+	        norwayPanel.add(button7);
+	        
+	        JButton button8 = new JButton("United Kingdom");
+	        // this points to the actionPerformed
+	        // actionListener
+	        button8.addActionListener(this);
+	        JLabel imageUk = null;
+	        imageUk= new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\uk.gif"));
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layout8 = new GridLayout(3, 3, 3, 3);
+	        // a JPanel for united kingdom
+	        JPanel ukPanel = new JPanel();
+	        ukPanel.setLayout(layout8);
+	        ukPanel.add(imageUk);
+	        ukPanel.add(button8);
+	        
+	        JButton button9 = new JButton("United States");
+	        // this points to the actionPerformed
+	        // actionListener
+	        button9.addActionListener(this);
+	        JLabel imageUs = null;
+	        imageUs= new JLabel(new ImageIcon(""));
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layout9 = new GridLayout(3, 3,3,3);
+	        // a JPanel for united states
+	        JPanel usPanel = new JPanel();
+	        usPanel.setLayout(layout9);
+	        usPanel.add(imageUs);
+	        usPanel.add(button9);
+	        // final display of panels
+     GridLayout frameLayout = new GridLayout(3, 3);
+     this.setLayout(frameLayout);
+     this.add(canadaPanel);
+     this.add(chinaPanel);
+     this.add(denmarkPanel);
+     this.add(francePanel);
+     this.add(germanyPanel);
+     this.add(indiaPanel);
+     this.add(norwayPanel);
+     this.add(ukPanel);
+     this.add(usPanel);
+	 }
+	 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// The constructor 
+        Flags swing = new Flags("Fun with Flags");
+        // 
+        swing.setSize(700, 700);
+        // sets the close box 
+        swing.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        // makes window visible
+        swing.setVisible(true);
+}
+	 @Override
+	public void actionPerformed(ActionEvent event) {
+		 if (event.getSource() instanceof JButton)
+	        {
+	            JButton button = (JButton) event.getSource();
+	            //            System.out.println(button.getText());
+	            JOptionPane.showMessageDialog(this, button.getText());
+	        }
+	        System.out.println(event.getSource());
+	    }
+	        {
+	           
+	      
+	      
+	        }
+	 }
