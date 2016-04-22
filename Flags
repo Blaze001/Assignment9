@@ -1,0 +1,260 @@
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+/**
+ * 
+ */
+
+/**
+ * @author Mitchell VanEss
+ *
+ */
+public class Flags 
+extends JFrame
+implements ActionListener
+{
+	 
+	/**
+	 * 
+	 */
+	public Flags(String title) {
+		// TODO Auto-generated constructor stub
+		// BufferedImage image;
+		
+		 JButton button1 = new JButton("Canada");
+	        button1.addActionListener(this);
+	        BufferedImage imageCanada = null;
+	        //imageCanada = new JLabel(new ImageIcon("C:\\Users\\mvane\\workspace\\Assignment9\\images\\ca.gif"));
+	       try {
+			imageCanada = ImageIO.read(getClass().getResourceAsStream("image/ca.gif"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	       ImageIcon canadaFlag = new ImageIcon(imageCanada);
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layoutOne = new GridLayout(2, 1, 3, 3);
+	        // a JPanel for Canada
+	        JPanel canadaPanel = new JPanel();
+	        canadaPanel.setLayout(layoutOne);
+	        JLabel labelOne = new JLabel(canadaFlag);
+	        canadaPanel.add(labelOne);
+	        canadaPanel.add(button1);
+	        
+	        JButton button2 = new JButton("United States");
+	        button2.addActionListener(this);
+	        BufferedImage imageUSA = null;
+	        //imageCanada = new JLabel(new ImageIcon("C:\\Users\\mvane\\workspace\\Assignment9\\images\\ca.gif"));
+	       try {
+			imageUSA = ImageIO.read(getClass().getResourceAsStream("image/us.gif"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	       ImageIcon usFlag = new ImageIcon(imageUSA);
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layoutTwo = new GridLayout(2, 1, 3, 3);
+	        // a JPanel for Canada
+	        JPanel usPanel = new JPanel();
+	        usPanel.setLayout(layoutTwo);
+	        JLabel labelTwo = new JLabel(usFlag);
+	        usPanel.add(labelTwo);
+	        usPanel.add(button2);
+	        
+	        JButton button3 = new JButton("China");
+	        button3.addActionListener(this);
+	        BufferedImage imageChina = null;
+	        //imageCanada = new JLabel(new ImageIcon("C:\\Users\\mvane\\workspace\\Assignment9\\images\\ca.gif"));
+	       try {
+			imageChina = ImageIO.read(getClass().getResourceAsStream("image/china.gif"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	       ImageIcon chinaFlag = new ImageIcon(imageChina);
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layoutThree = new GridLayout(2, 1, 3, 3);
+	        // a JPanel for Canada
+	        JPanel chinaPanel = new JPanel();
+	        chinaPanel.setLayout(layoutThree);
+	        JLabel labelThree = new JLabel(chinaFlag);
+	        chinaPanel.add(labelThree);
+	        chinaPanel.add(button3);
+	        
+	        JButton button4 = new JButton("Denmark");
+	        button4.addActionListener(this);
+	        BufferedImage imageDenmark = null;
+	        //imageCanada = new JLabel(new ImageIcon("C:\\Users\\mvane\\workspace\\Assignment9\\images\\ca.gif"));
+	       try {
+			imageDenmark = ImageIO.read(getClass().getResourceAsStream("image/denmark.gif"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	       ImageIcon denmarkFlag = new ImageIcon(imageDenmark);
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layoutFour = new GridLayout(2, 1, 3, 3);
+	        // a JPanel for Canada
+	        JPanel denmarkPanel = new JPanel();
+	        denmarkPanel.setLayout(layoutFour);
+	        JLabel labelFour = new JLabel(denmarkFlag);
+	        denmarkPanel.add(labelFour);
+	        denmarkPanel.add(button4);
+	        
+	        JButton button5 = new JButton("France");
+	        button5.addActionListener(this);
+	        BufferedImage imageFrance = null;
+	        //imageCanada = new JLabel(new ImageIcon("C:\\Users\\mvane\\workspace\\Assignment9\\images\\ca.gif"));
+	       try {
+			imageFrance = ImageIO.read(getClass().getResourceAsStream("image/fr.gif"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	       ImageIcon franceFlag = new ImageIcon(imageFrance);
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layoutFive = new GridLayout(2, 1, 3, 3);
+	        // a JPanel for Canada
+	        JPanel francePanel = new JPanel();
+	        francePanel.setLayout(layoutFive);
+	        JLabel labelFive = new JLabel(franceFlag);
+	        francePanel.add(labelFive);
+	        francePanel.add(button5);
+	        
+	        
+	        JButton button6 = new JButton("Germany");
+	        button6.addActionListener(this);
+	        BufferedImage imageGermany = null;
+	        //imageCanada = new JLabel(new ImageIcon("C:\\Users\\mvane\\workspace\\Assignment9\\images\\ca.gif"));
+	       try {
+			imageGermany = ImageIO.read(getClass().getResourceAsStream("image/germany.gif"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	       ImageIcon germanyFlag = new ImageIcon(imageGermany);
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layoutSix = new GridLayout(2, 1, 3, 3);
+	        // a JPanel for Canada
+	        JPanel germanyPanel = new JPanel();
+	        germanyPanel.setLayout(layoutSix);
+	        JLabel labelSix = new JLabel(germanyFlag);
+	        germanyPanel.add(labelSix);
+	        germanyPanel.add(button6);
+	        
+	        JButton button7 = new JButton("India");
+	        button7.addActionListener(this);
+	        BufferedImage imageIndia = null;
+	        //imageCanada = new JLabel(new ImageIcon("C:\\Users\\mvane\\workspace\\Assignment9\\images\\ca.gif"));
+	       try {
+			imageIndia = ImageIO.read(getClass().getResourceAsStream("image/india.gif"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	       ImageIcon indiaFlag = new ImageIcon(imageIndia);
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layoutSeven = new GridLayout(2, 1, 3, 3);
+	        // a JPanel for Canada
+	        JPanel indiaPanel = new JPanel();
+	        indiaPanel.setLayout(layoutSeven);
+	        JLabel labelSeven = new JLabel(indiaFlag);
+	        indiaPanel.add(labelSeven);
+	        indiaPanel.add(button7);
+	        
+	        JButton button8 = new JButton("Norway");
+	        button8.addActionListener(this);
+	        BufferedImage imageNorway = null;
+	        //imageCanada = new JLabel(new ImageIcon("C:\\Users\\mvane\\workspace\\Assignment9\\images\\ca.gif"));
+	       try {
+			imageNorway = ImageIO.read(getClass().getResourceAsStream("image/norway.gif"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	       ImageIcon norwayFlag = new ImageIcon(imageNorway);
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layoutEight = new GridLayout(2, 1, 3, 3);
+	        // a JPanel for Canada
+	        JPanel norwayPanel = new JPanel();
+	        norwayPanel.setLayout(layoutEight);
+	        JLabel labelEight = new JLabel(norwayFlag);
+	       norwayPanel.add(labelEight);
+	       norwayPanel.add(button8);
+	       
+	       JButton button9 = new JButton("United States");
+	        button9.addActionListener(this);
+	        BufferedImage imageUK = null;
+	        //imageCanada = new JLabel(new ImageIcon("C:\\Users\\mvane\\workspace\\Assignment9\\images\\ca.gif"));
+	       try {
+			imageUK = ImageIO.read(getClass().getResourceAsStream("image/uk.gif"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	       ImageIcon ukFlag = new ImageIcon(imageUK);
+	        // two rows, one column, three pixels of buffer
+	        GridLayout layoutNine = new GridLayout(2, 1, 3, 3);
+	        // a JPanel for Canada
+	        JPanel ukPanel = new JPanel();
+	        ukPanel.setLayout(layoutNine);
+	        JLabel labelNine = new JLabel(ukFlag);
+	        ukPanel.add(labelNine);
+	        ukPanel.add(button9);
+	        
+	        GridLayout frameLayout = new GridLayout(3, 3);
+	        this.setLayout(frameLayout);
+	        this.add(canadaPanel);
+	        this.add(chinaPanel);
+	        this.add(denmarkPanel);
+	        this.add(francePanel);
+	        this.add(germanyPanel);
+	        this.add(indiaPanel);
+	        this.add(norwayPanel);
+	        this.add(ukPanel);
+	        this.add(usPanel);
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		// The constructor 
+        Flags swing = new Flags("Fun with Flags");
+        // 
+        swing.setSize(700, 700);
+        // sets the close box 
+        swing.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        // makes window visible
+        swing.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent event)
+	{
+		// TODO Auto-generated method stub
+		 if (event.getSource() instanceof JButton)
+	        {
+	            JButton button = (JButton) event.getSource();
+	            //            System.out.println(button.getText());
+	            JOptionPane.showMessageDialog(this, button.getText());
+	        }
+	        System.out.println(event.getSource());
+	    }
+	        
+	}
+
+
