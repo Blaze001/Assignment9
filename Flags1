@@ -21,7 +21,7 @@ implements ActionListener
 		 JButton button = new JButton("Canada");
 	        button.addActionListener(this);
 	        JLabel imageCa = null;
-	        imageCa = new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\ca.gif"));
+	        imageCa = new JLabel(new ImageIcon("src\\images\\ca.gif"));
 	        // two rows, one column, three pixels of buffer
 	        GridLayout layout = new GridLayout(3, 3, 3, 3);
 	        // a JPanel for canada
@@ -35,7 +35,7 @@ implements ActionListener
 	        // actionListener
 	        button2.addActionListener(this);
 	        JLabel imageChina = null;
-	        imageChina = new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\china.gif"));
+	        imageChina = new JLabel(new ImageIcon("src\\images\\china.gif"));
 	        // two rows, one column, three pixels of buffer
 	        GridLayout layout2 = new GridLayout(3, 3, 3, 3);
 	        // a JPanel for china
@@ -48,7 +48,7 @@ implements ActionListener
 	        
 	        button3.addActionListener(this);
 	        JLabel imageDenmark = null;
-	        imageDenmark= new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\denmark.gif"));
+	        imageDenmark= new JLabel(new ImageIcon("src\\images\\denmark.gif"));
 	        // two rows, one column, three pixels of buffer
 	        GridLayout layout3 = new GridLayout(3, 3, 3, 3);
 	        // a JPanel for denmark
@@ -62,7 +62,7 @@ implements ActionListener
 	        // actionListener
 	        button4.addActionListener(this);
 	        JLabel imageFrance = null;
-	        imageFrance= new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\fr.gif"));
+	        imageFrance= new JLabel(new ImageIcon("src\\images\\fr.gif"));
 	        // two rows, one column, three pixels of buffer
 	        GridLayout layout4 = new GridLayout(3, 3, 3, 3);
 	        // a JPanel for france
@@ -76,7 +76,7 @@ implements ActionListener
 	        // actionListener
 	        button5.addActionListener(this);
 	        JLabel imageGermany = null;
-	        imageGermany= new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\germany.gif"));
+	        imageGermany= new JLabel(new ImageIcon("src\\images\\germany.gif"));
 	        // two rows, one column, three pixels of buffer
 	        GridLayout layout5 = new GridLayout(3, 3, 3, 3);
 	        // a JPanel for germany
@@ -90,7 +90,7 @@ implements ActionListener
 	        // actionListener
 	        button6.addActionListener(this);
 	        JLabel imageIndia = null;
-	        imageIndia= new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\india.gif"));
+	        imageIndia= new JLabel(new ImageIcon("src\\images\\india.gif"));
 	        // two rows, one column, three pixels of buffer
 	        GridLayout layout6 = new GridLayout(3, 3, 3, 3);
 	        // a JPanel for india
@@ -104,7 +104,7 @@ implements ActionListener
 	        // actionListener
 	        button7.addActionListener(this);
 	        JLabel imageNorway = null;
-	        imageNorway= new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\norway.gif"));
+	        imageNorway= new JLabel(new ImageIcon("src\\images\\norway.gif"));
 	        // two rows, one column, three pixels of buffer
 	        GridLayout layout7 = new GridLayout(3, 3, 3, 3);
 	        // a JPanel for norway
@@ -118,7 +118,7 @@ implements ActionListener
 	        // actionListener
 	        button8.addActionListener(this);
 	        JLabel imageUk = null;
-	        imageUk= new JLabel(new ImageIcon("C:\\Users\\Shane\\Documents\\Java\\AssignmentNine\\src\\images\\uk.gif"));
+	        imageUk= new JLabel(new ImageIcon("src\\images\\uk.gif"));
 	        // two rows, one column, three pixels of buffer
 	        GridLayout layout8 = new GridLayout(3, 3, 3, 3);
 	        // a JPanel for united kingdom
